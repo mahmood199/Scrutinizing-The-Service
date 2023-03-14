@@ -1,4 +1,4 @@
-package com.example.scrutinizing_the_service.ui
+package com.example.scrutinizing_the_service.ui.launcher
 
 import android.annotation.SuppressLint
 import android.content.ComponentName
@@ -12,7 +12,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.scrutinizing_the_service.databinding.ActivityMainBinding
 import com.example.scrutinizing_the_service.services.BinderImpl
 import com.example.scrutinizing_the_service.services.SmartServices
+import com.example.scrutinizing_the_service.ui.job_intent.JobIntentActivity
 import com.example.scrutinizing_the_service.ui.music.MusicPlayerActivity
+import com.example.scrutinizing_the_service.ui.notif.NotificationActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -76,6 +78,9 @@ class MainActivity : AppCompatActivity() {
             }
             btnGoToSongsScreen.setOnClickListener {
                 startActivity(Intent(this@MainActivity, MusicPlayerActivity::class.java))
+            }
+            btnJobIntentService.setOnClickListener {
+                startActivity(Intent(this@MainActivity, JobIntentActivity::class.java))
             }
         }
     }

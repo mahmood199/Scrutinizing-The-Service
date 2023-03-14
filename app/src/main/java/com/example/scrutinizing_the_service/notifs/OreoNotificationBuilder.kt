@@ -1,6 +1,5 @@
 package com.example.scrutinizing_the_service.notifs
 
-import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -15,7 +14,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import com.example.scrutinizing_the_service.R
-import com.example.scrutinizing_the_service.ui.MainActivity
+import com.example.scrutinizing_the_service.ui.launcher.MainActivity
 
 class OreoNotificationBuilder(
     val context: Context

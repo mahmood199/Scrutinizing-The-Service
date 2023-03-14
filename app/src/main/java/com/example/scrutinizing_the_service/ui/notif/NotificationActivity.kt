@@ -1,4 +1,4 @@
-package com.example.scrutinizing_the_service.ui
+package com.example.scrutinizing_the_service.ui.notif
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
